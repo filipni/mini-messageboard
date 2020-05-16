@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1#title= title
+  #messages
+    each msg in messages
+      .message
+        p.text= msg.text
+      p.sender #{msg.user} - #{msg.added.toDateString()}
+    a#NewMessage(href='/new') New Message 
