@@ -5,5 +5,7 @@ block content
         h3 Message
         textarea.text-input(name='text', cols='30', rows='10', form='message-form', required)
         h3 Name
-        input.text-input(name='user' type='text' maxlength='20', required)
-        input(type='submit', value='Send message')
+        input.text-input(name='user' type='text' maxlength='50', required)
+        #button-pane 
+            input.link-button(type='submit', value='Send message')
+            a.link-button#cancel-button(href='/') Cancel

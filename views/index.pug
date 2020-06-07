@@ -7,4 +7,4 @@ block content
       .message
         p.text= msg.text
       p.sender #{msg.user} - #{msg.added.toDateString()}
-    a#NewMessage(href='/new') New Message 
+    a.link-button#new-message-button(href='/new') New Message 
